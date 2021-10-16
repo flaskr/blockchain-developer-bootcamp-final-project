@@ -1,0 +1,13 @@
+RentableERC721 is ERC721 {
+  
+  constructor(erc721.address)
+  
+  rentOut(tokenId, rentee, durationInSeconds) {
+    // record who we rent to, and what duration
+    // 'mints' a copy of this rentToken and sends it to rentee
+  }
+  
+  withdraw(tokenId) {
+    // allow withdrawal of actual NFT by original owner if rental duration has passed.
+  }
+}
