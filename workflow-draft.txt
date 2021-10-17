@@ -1,13 +1,41 @@
-RentableERC721 is ERC721 {
+ILendingChecker {
+  balanceOf(erc721Address, ownerToCheck) 
+  ownerOf(erc721Address, tokenId)
+}
+
+// maintains mappings of wrapper addresses, allows meta-lookups to check for ownership
+ERC721Lender is ILendingChecker {
+  register(erc721.address) {
+    //create ERC721LendingWrapper wrapper contract and a mapping
+  }
+  
+  lendOut(erc721Address, tokenId, borrower, startTime, durationInSeconds) {
+    //lends out an erc721 token to the rentee by calling the wrapper contract's 'lendOut' option
+  }
+  
+  balanceOf(erc721Address, ownerToCheck) {
+    // returns balance for ownerToCheck by checking token addresses: (check the following addresses: direct wrapper reference, lookup wrapper using given address, finally, use actual erc721 address)
+  }
+  
+  ownerOf(erc721Address, tokenId) {
+    // returns owner address of token (check the following addresses: direct wrapper reference, lookup wrapper using given address, finally, use actual erc721 address)
+  }
+  
+  collect(erc721Address, tokenId) {
+    //withdraw actual NFT from wrapper contract
+  }
+}
+
+ERC721LendingWrapper is ERC721 {
   
   constructor(erc721.address)
   
-  rentOut(tokenId, rentee, durationInSeconds) {
-    // record who we rent to, and what duration
-    // 'mints' a copy of this rentToken and sends it to rentee
+  lendOut(tokenId, borrower, startTime, durationInSeconds) {
+    // record who we lend to, and what duration
+    // 'mints' a copy of this lendWrapper and sends it to borrower
   }
   
-  withdraw(tokenId) {
+  collect(tokenId) {
     // allow withdrawal of actual NFT by original owner if rental duration has passed.
   }
 }
