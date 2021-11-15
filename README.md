@@ -1,9 +1,4 @@
-# 1. OTC swap for approval-less token standards
-- Anyone can create an OTCSwap -> between 2 defined parties for 2 defined token amounts
-- Defined parties will need to transfer tokens into the swap (without approvals) contract
-- Anyone can then call for the swap to execute.
-
-# 2. Proof of NFT
+# Proof of NFT
 The application will provide let a digital or real life party verify that a particular person they are communicating with does indeed own an NFT. + NFT rental
 
 ## NFT ownership verification
