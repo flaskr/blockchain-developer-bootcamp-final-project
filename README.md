@@ -92,6 +92,7 @@ A borrower should be able to return the borrowed NFT by burning the wrapper NFT.
 
 ## Environment variables (not needed for running project locally)
 This is only required for deployment
+* Make a copy of `env.example` and name it `env`. Update it with the below values:
 * Etherscan_api_key is not required.
 * You need an alchemy account or some other ropsten endpoint
 * Private key will be the private key of the account that you'll be using for deployment
