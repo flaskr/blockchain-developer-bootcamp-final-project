@@ -1,7 +1,8 @@
 # Blockchain Developer Bootcamp Final Project - NFT Lend
 ## URL of deployed application
 http://faulty-hill.surge.sh/
-You will need some ERC-721 
+
+You will need some ERC-721 in your account to test this. 
 
 ## Running the project locally
 ### Prerequisites
@@ -41,36 +42,9 @@ You will need some ERC-721
 11. `npm run build` to build the frontend
 12. `npm run dev` to start the frontend, it should be deployed to http://localhost:5000
 
-### Testing on the localhost UI
-You can follow these steps to test the smart contract functionality locally if you wish
-13. Open your browser, and add the localhost hardhat node to your Metamask as a network with the following parameters:
-    - Network Name: `Local Hardhat Network` (naming not important)
-    - RPC URL: `http://localhost:8545` (this should match the url in step 5 [start local hardhat node])
-    - ChainId: `31337`
-    - Currency: `ETH`
-14. Add private keys of accounts to MetaMask
-    1. 'Account 1': From step 4.1.1
-    2. 'Account 2': From step 4.1.2
-15. In the browser, navigate to local instance of UI, it should be http://localhost:5000 or the URL provided by console in step 11.
-16. Metamask should prompt for connection, if not, click on metamask to connect both Account 1 and Account 2.
-17. Make sure you're using Account 1 in Metamask as it has the NFTs.
-18. In the first form to 'Lend NFT', enter
-    1. NFT token address: from step 7.1.1
-    2. Token id: `0` (`1` and `2` are also possible if you wish to repeat this step)
-    3. Borrower: Public address of Account 2
-19. Click on 'Approve' and sign the txn in Metamask to allow the contract to move the NFT.
-20. Click 'Lend' and sign the transaction in Metamask
-21. You should see an Alert in browser confirming that address was updated.
-22. UI should reflect token `0` under the 'Lent NFTs' section.
-23. Using the 'verify ownership' form, and inputting the following should give you Account 2's address:
-    1. Token address to check: Test NFT token address
-    2. Token id: `0`
-24. In Metamask, switch user to Account 2
-25. UI should reflect token `0` under 'Borrowed' NFTs section.
-
 ## Screencast link
 
-
+https://youtu.be/fsz7ex5a-JY
 
 ## Public Ethereum wallet for certification:
 

@@ -101,13 +101,16 @@
             secondsNow,
             86400 // 1 day
         ).then((e) => {
-            alert('Lent out NFT!');
+            reloadNfts();
+            alert('Success! Lent out NFT!');
             console.log(e);
         })
-            .catch((e) => {
-                console.log(e);
-                console.log('Encountered error while loading data.');
-            });
+        .catch((e) => {
+            reloadNfts();
+            alert('Error lending out NFT! Please check console.')
+            console.log(e);
+            console.log('Encountered error while loading data.');
+        });
     }
 
     async function checkOwner() {
@@ -119,10 +122,12 @@
         provider = new ethers.providers.Web3Provider(window.ethereum);
         await provider.send("eth_requestAccounts", []);
         signer = provider.getSigner();
-        const signerAddress = await signer.getAddress();
 
         lenderContract = new ethers.Contract(lenderAddress, erc721Lender.abi, provider);
+        await reloadNfts();
+    }
 
+    async function reloadNfts() {
         lentNfts = await getLentHistoryForUser();
         borrowedNfts = await getBorrowHistoryForUser();
     }
