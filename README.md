@@ -69,13 +69,13 @@ A borrower should be able to return the borrowed NFT by burning the wrapper NFT.
 #### Borrower
 1. Enter website
 2. Connect with Metamask
-3. Observe that 
+3. Observe that the borrowed NFT is showing up under 'borrowed' section.
 
 ### Collecting an NFT that was borrowed (Not implemented in UI)
 #### Lender
 1. After the lending duration has expired, enter the website
 2. Connect with Metamask
-3. Click on 'Collect' on an NFT under the 'borrowed' section
+3. Click on 'Collect' on an NFT under the 'lent' section
 4. Use the 'verify ownership' to check that you are the new virtual owner. NFT contract should also say that you are the current owner.
 
 ### Returning an NFT early (Not implemented in UI)
