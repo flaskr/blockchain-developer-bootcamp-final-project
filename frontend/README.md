@@ -1,4 +1,6 @@
-# frontend for nft-lend
+# Front-end for NFT Lend
+
+Right now, this is configured to connect to the deployed lender contract in Ropsten test network, as well as to use a default test token contract provided by paradigm's faucet.
 
 ## Get started
 
@@ -8,24 +10,13 @@ Install the dependencies...
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-## Building and running in production mode
-
 To create an optimised version of the app:
 
 ```bash
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
+You can run the newly built app with `npm run start`. 
 
 ## Deploying to the web
 
@@ -41,5 +32,5 @@ Then, from within your project folder:
 
 ```bash
 npm run build
-surge public my-project.surge.sh
+surge public <my-project>.surge.sh
 ```
