@@ -5,11 +5,6 @@
     let provider;
     let signer;
 
-
-    // 0xf5de760f2e916647fd766b4ad9e85ff943ce3a2b token address | tokens 2221 - 2225
-    // 0x895f7eD0CDB2aeE3DD6586617819Bf697c7b5B9A first account
-    // 0x85b882d836674de2BE2cBe32386fcd062dC754C7 second account
-
     const lenderAddress = '0x1e83B1EB6C549353bdc9659737fEc6Ac5Fc500c0'; // ropsten
     const contractCreationBlock = 11468813;
 
