@@ -1,6 +1,7 @@
 # Blockchain Developer Bootcamp Final Project - NFT Lend
-## Deployed version url:
+## URL of deployed application
 http://faulty-hill.surge.sh/
+You will need some ERC-721 
 
 ## Running the project locally
 ### Prerequisites
@@ -57,14 +58,15 @@ You can follow these steps to test the smart contract functionality locally if y
     1. NFT token address: from step 7.1.1
     2. Token id: `0` (`1` and `2` are also possible if you wish to repeat this step)
     3. Borrower: Public address of Account 2
-19. Click 'Lend' and sign the transaction in Metamask
-20. You should see an Alert in browser confirming that address was updated.
-21. UI should reflect token `0` under the 'Lent NFTs' section.
-22. Using the 'verify ownership' form, and inputting the following should give you Account 2's address:
+19. Click on 'Approve' and sign the txn in Metamask to allow the contract to move the NFT.
+20. Click 'Lend' and sign the transaction in Metamask
+21. You should see an Alert in browser confirming that address was updated.
+22. UI should reflect token `0` under the 'Lent NFTs' section.
+23. Using the 'verify ownership' form, and inputting the following should give you Account 2's address:
     1. Token address to check: Test NFT token address
     2. Token id: `0`
-23. In Metamask, switch user to Account 2
-24. UI should reflect token `0` under 'Borrowed' NFTs section.
+24. In Metamask, switch user to Account 2
+25. UI should reflect token `0` under 'Borrowed' NFTs section.
 
 ## Screencast link
 
@@ -72,7 +74,7 @@ You can follow these steps to test the smart contract functionality locally if y
 
 ## Public Ethereum wallet for certification:
 
-``
+`0x8C67b4AAF78CF53b624d8bcB63Ca7513A5634203`
 
 ## Project description
 
