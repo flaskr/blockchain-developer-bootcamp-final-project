@@ -12,6 +12,7 @@ You will need some ERC-721 in your account to test this.
 * Browser with Metamask extension installed
 
 ### Contracts
+After checking out the `main` branch of this project:
 1. `yarn install` to install dependencies
 2. `yarn compile` to compile smart contracts
 3. `yarn test` to run unit tests
